@@ -1,0 +1,9 @@
+F:\college\Operating Systym 2\Project\threading\sudokuThreading\sudoku\bin\Debug\sudoku.exe.config
+F:\college\Operating Systym 2\Project\threading\sudokuThreading\sudoku\bin\Debug\sudoku.exe
+F:\college\Operating Systym 2\Project\threading\sudokuThreading\sudoku\bin\Debug\sudoku.pdb
+F:\college\Operating Systym 2\Project\threading\sudokuThreading\sudoku\obj\Debug\sudoku.csprojResolveAssemblyReference.cache
+F:\college\Operating Systym 2\Project\threading\sudokuThreading\sudoku\obj\Debug\sudoku.exe
+F:\college\Operating Systym 2\Project\threading\sudokuThreading\sudoku\obj\Debug\sudoku.pdb
+F:\college\Operating Systym 2\Project\threading\New folder (2)\Sudoku_Threading\sudokuThreading\sudoku\bin\Debug\sudoku.exe.config
+F:\college\Operating Systym 2\Project\threading\New folder (2)\Sudoku_Threading\sudokuThreading\sudoku\obj\Debug\sudoku.exe
+F:\college\Operating Systym 2\Project\threading\New folder (2)\Sudoku_Threading\sudokuThreading\sudoku\obj\Debug\sudoku.pdb
