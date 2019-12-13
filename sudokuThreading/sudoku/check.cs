@@ -8,7 +8,8 @@ namespace sudoku
 
     class check
     {
-    public static int[,] puzzle =  {
+
+    /*public static int[,] puzzle =  {
     { 5, 3, 0, 0, 7, 0, 0, 0, 0 },
     { 6, 0, 0, 1, 9, 5, 0, 0, 0 },
     { 0, 9, 8, 0, 0, 0, 0, 6, 0 },
@@ -22,7 +23,7 @@ namespace sudoku
             }
 
 ;
-
+*/
         public bool check_row(int[,] puzzle,int row,int num)
         {
             int counter = 0;
@@ -95,7 +96,7 @@ namespace sudoku
 
 
 
-        public bool check_availability()
+        public bool check_availability(int[,]puzzle)
         {
             Boolean b;
             int x;

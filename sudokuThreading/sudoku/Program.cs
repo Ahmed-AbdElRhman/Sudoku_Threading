@@ -36,9 +36,12 @@ namespace sudoku
 
             // Creat checking thred && solving Thread 
 
-             Task<bool> check_thread  = new Task<bool>(availability.check_availability);
-            //Thread check_thread = new Thread(() => flag = availability.check_availability());
-            Thread     solver_thread = new Thread     (()=> solve.SolveSudoku(puzzle, 0, 0));
+            //-----------------How Sending puzzle Array as Object to availability.check_availability(puzzele)----
+            Task<bool> check_thread  = new Task<bool>(availability.check_availability(puzzle));
+            //---------------------------------------------------------------------------------------------------
+
+            Thread solver_thread = new Thread     (()=> solve.SolveSudoku(puzzle, 0, 0));
+
             // Starting checking thread && solving Thread 
             check_thread.Start();
             solver_thread.Start();
@@ -47,18 +50,17 @@ namespace sudoku
             stopwach.Start();
             // Wait checking thread till End TO get the return Value
             check_thread.Wait();
-            //check_thread.Join();
-            if (/*!flag */!check_thread.Result)
+
+            if (!check_thread.Result)
             {
-                solver_thread.Abort();
+                solver_thread.Abort(); //Stop Solve Puzzle If not available (no solution)
                 Console.WriteLine("this puzzle not available....ther is no solution!");
             }
             else
             {
 
-                //Task.Run(() => solve.SolveSudoku(puzzle, 0, 0));// Wait till Solve it )
-                //solve.SolveSudoku(puzzle, 0, 0);
-                solver_thread.Join();
+
+                solver_thread.Join(); // Wait Till Solve Puzzele
                 solve.print(puzzle);
             }
 
